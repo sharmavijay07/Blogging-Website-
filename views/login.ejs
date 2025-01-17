@@ -1,0 +1,54 @@
+<%- include('./layouts/header.ejs') %>
+
+    <div class="container loginCon">
+        
+        <div class="left">
+            <!-- Heading -->
+            <section class="Head_container">
+                <h1>Bloging Website</h1>
+            </section>
+            <!-- Description -->
+            <section class="Description_container">
+                <p>Read and write blogs to Connect with the unique mind's of this world.</p>
+            </section>
+        </div>
+        <div class="right">
+            <h1>Login</h1>
+        <% 
+            if(typeof message !== 'undefined') {
+                %>
+                <p style="color:red;"><%- message %></p>
+                <%
+            }
+
+        %>
+            <form action="" method="POST">
+                <div class="row">
+                    
+                    <div class="col-sm-12 inputs">
+                        <input type="email" name="email" placeholder="Enter email" required>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-12 inputs">
+                        <input type="password" name="password" placeholder="Enter password" required>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-12 inputs">
+                        <input type="submit" value="Login" class="btn btn-info">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-12">
+                        <a href="/register">New User?, go for signup</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+<%- include('./layouts/footer.ejs') %>
+
+

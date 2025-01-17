@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(201, 210, 210);
+}
+.container{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(201, 210, 210);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+@media(max-width:1200px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem ;
+        margin-right: 2rem;
+        
+    }
+    .rightbox{
+        margin-bottom: 10rem;
+    }
+}
+.leftbox{
+    height: 20rem;
+    width: 30rem;
+    margin-left: 3rem;
+}
+.Head_container{
+    color: rgb(48, 48, 236);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top:5rem;
+    margin-left:2rem;
+    margin-bottom: 0.5rem;
+}
+.Description_container{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 2rem;
+    max-width: 300px;
+}
+.rightbox{
+    height: 20rem;
+    width: 25rem;
+    margin-right: 3rem;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.emailbox{
+    height: 3rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid rgb(190, 181, 181);
+    border-radius: 8px;
+}
+.emailbox #Text1{
+    font-size: medium;
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    background-color:transparent ;
+    border: 0px solid;
+    border-radius: 8px;
+    color: black;
+}
+.password{
+    height: 3rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(190, 181, 181);
+    border-radius: 8px;
+}
+.password #Text2{
+    font-size: medium;
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 0px solid;
+    border-radius: 8px;
+}
+.Login_button{
+    height: 3rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid rgb(190, 181, 181);
+    border-radius: 8px;
+    background-color: rgb(48, 48, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login_button #Text3{
+    font-size: medium;
+    height: 3rem;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    color: azure;
+    border: 0px solid;
+    font-weight: bolder;
+}
+.forgot_password{
+    height: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.forgot_password a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56, 56, 203);
+}
+#Line{
+    width: 90%;
+    margin: auto;
+}
+.button_container{
+    height: 3rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s linear 0s;
+}
+.button_container:hover{
+    transform: scale(1.2);
+}
+.button_container #account_button{
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(40, 177, 40);
+    color: azure;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+}
